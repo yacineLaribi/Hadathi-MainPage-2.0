@@ -1,0 +1,6 @@
+# Hadathi-MainPage-2.0
+This repository tlçaw fih main page li khdmtha and that's it ...
+Anyway guys in the beginning of the html you will find a comment that shows where to put the video , so go download the video from youtube 
+(the link : https://www.youtube.com/watch?v=Ti1JE_YmrJs&t=4s)
+so go download it and put it in your html and it will be perfect 
+Enjoy ...
