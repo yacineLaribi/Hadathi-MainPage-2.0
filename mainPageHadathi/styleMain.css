@@ -144,12 +144,13 @@ nav ul li {
 .content h1 {
   font-size: 160px;
   margin-top: 50px;
-  color: white;
+ /* color: white;*/
   line-height: 160px;
   color: transparent;
   -webkit-text-stroke: 2px white;
   background: url(back.png);
   -webkit-background-clip: text;
+  z-index: -1;
   background-position: 0 0;
   animation: back 20s linear infinite;
 }
@@ -187,7 +188,7 @@ nav ul li {
     left: 0;
     height: 120vh;
   }
-  @media (min-aspect-ratio: 1/1) {
+  @media (min-aspect-ratio: 16/9) {
     .backVideo {
       width: 100%;
       height: auto;
@@ -308,7 +309,7 @@ nav ul li:hover {
 /*second part*/
 .partTwo {
   width: 100%;
-  height: 110vh;
+  height: 130vh;
   position: relative;
   top: auto;
   left: auto;
@@ -321,7 +322,7 @@ nav ul li:hover {
   margin-bottom: 50px;
 }
 .partTwo h2 {
-  margin-top: 80px;
+  margin-top: 10%;
   font-size: 90px;
   color: var(--maincolor);
 }
@@ -336,6 +337,7 @@ nav ul li:hover {
   margin: 0 0 0 50px;
 }
 .events .eventBox {
+  margin:5% 0 0 0;
   display: flex;
   flex-direction: column;
   width: auto;
@@ -388,6 +390,36 @@ nav ul li:hover {
   background-color: white;
   scale: 103%;
 }
+/*button effect essai */ 
+#btn{
+  margin-top: 8%;
+  margin-bottom: 2%;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--maincolor);
+  text-shadow: none;
+  background: transparent;
+  box-shadow: transparent;
+  border: 1px solid var(--maincolor);
+  transition: 0.5s ease;
+  user-select: none;
+  cursor: pointer;
+}
+
+#btn:hover,#btn:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff,
+              0 0 10px #ffffff;
+  box-shadow: 0 0 5px #008cff,
+              0 0 20px #008cff,
+              0 0 50px #008cff,
+              0 0 100px #008cff;
+}
 /*responsive part 2*/
 @media screen and (max-width: 768px) {
   .partTwo {
@@ -415,7 +447,7 @@ nav ul li:hover {
 
   .events .eventBox {
     width: 80%;
-    height: 50%;
+    height: 30%;
     margin-bottom: 30px;
   }
   .evntImg {
